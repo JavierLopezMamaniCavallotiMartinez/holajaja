@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relevamiento de Usuarios</title>
+</head>
+<body>
+
+    <h2>Formulario de Relevamiento</h2>
+
+    <p><a href="HOALLA.html">Volver</a></p>
+
+    <form action="procesar.php" method="POST" enctype="multipart/form-data">
+
+        <label>Nombre del usuario</label><br>
+        <input type="text" name="nombre"><br><br>
+
+        <label>Apellido del usuario</label><br>
+        <input type="text" name="apellido"><br><br>
+
+        <label>Edad del usuario</label><br>
+        <input type="number" name="edad"><br><br>
+
+        <label>Correo electrónico</label><br>
+        <input type="email" name="correo"><br><br>
+
+        <label>Fecha del relevamiento</label><br>
+        <input type="date" name="fecha"><br><br>
+
+        <label>Sexo del usuario</label><br>
+        <input type="radio" name="sexo" value="Hombre"> Hombre <br>
+        <input type="radio" name="sexo" value="Mujer"> Mujer <br>
+        <input type="radio" name="sexo" value="Otro"> Otro <br><br>
+
+        <label>Equipo del usuario</label><br>
+        <select name="equipo">
+            <option>PC</option>
+            <option>Celular</option>
+            <option>Tablet</option>
+            <option>Consola</option>
+            <option>Laptop</option>
+            <option>Servidor</option>
+        </select><br><br>
+
+        <label>Sistema Operativo</label><br>
+        <select name="sistema">
+            <option>Windows</option>
+            <option>Linux</option>
+            <option>Android</option>
+            <option>iOS</option>
+            <option>macOS</option>
+        </select><br><br>
+
+        <label>¿Para qué usa el equipo?</label><br>
+        <input type="checkbox" name="uso" value="Estudio"> Estudio <br>
+        <input type="checkbox" name="uso" value="Trabajo"> Trabajo <br>
+        <input type="checkbox" name="uso" value="Juegos"> Juegos <br>
+        <input type="checkbox" name="uso" value="Redes"> Redes Sociales <br><br>
+
+        <label>Horas de uso por día</label><br>
+        <input type="number" name="horas" min="1" max="24"><br><br>
+
+        <label>Foto del equipo</label><br>
+        <input type="file" name="foto"><br><br>
+
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+
+        <label>ID del usuario</label><br>
+
+
+<input type="number" name="id_usuario"><br><br>
+
+<label>Provincia</label><br>
+<input type="text" name="provincia"><br><br>
+
+<label>Ciudad</label><br>
+<input type="text" name="ciudad"><br><br>
+
+<label>Ocupación</label><br>
+<input type="text" name="ocupacion"><br><br>
+
+<label>Nivel educativo</label><br>
+<select name="educacion">
+    <option>Primario</option>
+    <option>Secundario</option>
+    <option>Terciario</option>
+    <option>Universitario</option>
+</select><br><br>
+
+<label>Ingreso mensual aproximado</label><br>
+<input type="number" name="ingreso"><br><br>
+
+<label>Cantidad de dispositivos que posee</label><br>
+<input type="number" name="dispositivos"><br><br>
+
+<label>Marca principal del equipo</label><br>
+<input type="text" name="marca"><br><br>
+
+<label>Años de uso del equipo</label><br>
+<input type="number" name="anios_uso"><br><br>
+
+<label>Velocidad de Internet (Mbps)</label><br>
+<input type="number" name="internet"><br><br>
+
+<label>¿Tiene acceso a Internet?</label><br>
+<input type="radio" name="acceso_internet" value="Si"> Sí
+<input type="radio" name="acceso_internet" value="No"> No
+<br><br>
+
+
+        <label>Observaciones</label><br>
+        <textarea name="comentario" rows="6" cols="40"></textarea><br><br>
+        
+
+<label>Fecha de carga</label><br>
+<input type="date" name="fecha_carga"><br><br>
+
+    </form>
+
+</body>
+</html>
